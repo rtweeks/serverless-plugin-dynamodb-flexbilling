@@ -1,0 +1,20 @@
+{
+  "name": "serverless-plugin-dynamodb-flexbilling",
+  "version": "1.0.0",
+  "description": "Billing Mode Flexibility for DynamoDB Tables in Serverless Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "serverless",
+    "serverless-plugin",
+    "dynamodb",
+    "serverless-dynamodb"
+  ],
+  "author": "Richard T. Weeks",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
