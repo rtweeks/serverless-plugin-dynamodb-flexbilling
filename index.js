@@ -22,6 +22,7 @@ class ServerlessPluginDynamodbFlexbilling {
     // };
 
     this.hooks = {
+      'before:print:print': this.fixResources.bind(this),
       'before:package:initialize': this.fixResources.bind(this),
       'before:remove:remove': this.fixResources.bind(this),
       'before:offline:start:init': this.fixResources.bind(this),

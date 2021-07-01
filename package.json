@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-dynamodb-flexbilling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Billing Mode Flexibility for DynamoDB Tables in Serverless Framework",
   "main": "index.js",
   "repository": "github:rtweeks/serverless-plugin-dynamodb-flexbilling",
