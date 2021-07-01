@@ -42,6 +42,9 @@ class ServerlessPluginDynamodbFlexbilling {
       if (!tableProps) continue;
       if (tableProps.BillingMode === 'PAY_PER_REQUEST') {
         delete tableProps.ProvisionedThroughput;
+        for (var gsi of (tableProps.GlobalSecondaryIndexes || [])) {
+          delete gsi.ProvisionedThroughput;
+        }
       }
     }
   }
